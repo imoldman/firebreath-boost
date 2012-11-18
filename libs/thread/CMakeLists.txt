@@ -24,8 +24,9 @@ else()
     set (PLATFORMDIR pthread)
 endif()
 include_directories (
+    ${Boost_USE_CPP11_INCLUDE_DIRS}
     ${Boost_INCLUDE_DIRS}
-	${CMAKE_CURRENT_SOURCE_DIR}/src
+    ${CMAKE_CURRENT_SOURCE_DIR}/src
     ${CMAKE_CURRENT_SOURCE_DIR}/src/${PLATFORMDIR}
 )
 
