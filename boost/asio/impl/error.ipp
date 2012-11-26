@@ -19,6 +19,11 @@
 #include <boost/asio/error.hpp>
 
 #include <boost/asio/detail/push_options.hpp>
+#include <string>
+
+#ifndef _NOEXCEPT
+#define _NOEXCEPT
+#endif
 
 namespace boost {
 namespace asio {
@@ -31,7 +36,7 @@ namespace detail {
 class netdb_category : public boost::system::error_category
 {
 public:
-  const char* name() const
+  const char* name() const _NOEXCEPT
   {
     return "asio.netdb";
   }
@@ -63,7 +68,7 @@ namespace detail {
 class addrinfo_category : public boost::system::error_category
 {
 public:
-  const char* name() const
+  const char* name() const _NOEXCEPT
   {
     return "asio.addrinfo";
   }
@@ -93,7 +98,7 @@ namespace detail {
 class misc_category : public boost::system::error_category
 {
 public:
-  const char* name() const
+  const char* name() const _NOEXCEPT
   {
     return "asio.misc";
   }

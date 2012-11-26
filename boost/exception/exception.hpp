@@ -12,6 +12,8 @@
 #pragma warning(push,1)
 #endif
 
+#include <boost/shared_ptr.hpp>
+
 namespace
 boost
     {
@@ -144,8 +146,8 @@ boost
 # endif
 #endif
 
-    template <class T>
-    class shared_ptr;
+    //template <class T>
+    //class shared_ptr;
 
     namespace
     exception_detail

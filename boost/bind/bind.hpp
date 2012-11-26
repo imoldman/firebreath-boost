@@ -21,6 +21,7 @@
 //  See http://www.boost.org/libs/bind/bind.html for documentation.
 //
 
+#include <boost/weak_ptr.hpp>
 #include <boost/config.hpp>
 #include <boost/ref.hpp>
 #include <boost/mem_fn.hpp>
@@ -48,7 +49,7 @@
 namespace boost
 {
 
-template<class T> class weak_ptr;
+//template<class T> class weak_ptr;
 
 namespace _bi // implementation details
 {
